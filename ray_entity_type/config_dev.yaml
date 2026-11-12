@@ -1,0 +1,10 @@
+batch_params:
+  batch_job_queue: mle-gpu-inference-job-queue
+  batch_job_definition: entity-type-ray-job-def-dev
+  batch_job_timeout: 43200
+input_params:
+  input_s3_path: s3://de-analytics-temp/wbombola/entity_type_ray/datasets/input_increment/data/
+  batch_size: 128
+  num_actors: 1
+output_params:
+  output_s3_path: s3://de-analytics-temp/wbombola/entity_type_ray/output/batch/

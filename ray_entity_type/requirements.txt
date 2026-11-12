@@ -1,0 +1,10 @@
+# torch comes from the base image (pytorch/pytorch:2.8.0-cuda12.9); locally pip pulls a CPU build
+torch==2.8.0
+transformers==4.26.0
+numpy<2
+pandas==2.3.3
+pyarrow==21.0.0
+ray[data,default]==2.53.0
+click==8.2.1
+boto3==1.42.28
+PyYAML==6.0.2
